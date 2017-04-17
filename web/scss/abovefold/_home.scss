@@ -1,0 +1,233 @@
+.banner-wrap {
+	position: relative;
+	background-color : #38433d;
+	height: calc(100vh - 109px);
+	max-height: 768px;
+	min-height: 520px;
+	overflow: hidden;
+
+	@include breakpoint(tablet) {
+
+		&:before {
+			content:'';
+			display: block;
+			position: absolute;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 100%;
+			background: rgba(0, 0, 0, 0.27);
+			z-index: 1;
+		}
+	}
+
+	h1 {
+		color: $coWhite;
+
+		&.co-yellow {
+			color: $coYellow;
+		}
+	}
+
+	&.mini-banner {
+		min-height: 250px;
+		max-height: 250px;
+		height: 250px;
+		background: #b7c2bb;
+
+		@include breakpoint(phablet) {
+			min-height: 180px;
+			max-height: 250px;
+			height: 180px;
+		}
+
+		h1 {
+			color: $bgDarkGreen;
+			background: transparent;
+			text-transform: uppercase;
+			margin-top: 100px;
+			padding: 0;
+
+			@include breakpoint(tablet) {
+				font-size: 53px;
+				text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+			}
+
+			@include breakpoint(tablet2) {
+				font-size: 43px;
+
+			}
+
+			@include breakpoint(phablet) {
+				margin-top: 80px;
+			}
+		}
+	}
+
+	&.banner-home {
+		height: calc(100vh - 109px);
+		min-height: 320px;
+		max-height: 100%;
+		background-color: #17221b;
+
+		@include breakpoint(tablet) {
+			height: calc(100vh - 55px);
+		}
+
+		
+
+		.banner-content {
+			text-align: right;
+			float: right;
+		}
+	}
+
+	@include breakpoint(phablet) {
+		min-height: 320px;
+		max-height: 480px;
+	}
+
+
+	.banner-img {
+
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		img {
+			display: block;
+		}
+	}
+
+	.banner-content {
+		max-width: 573px;
+		float: left;
+
+		@include breakpoint(tablet2) {
+			text-align: left;
+		}
+	}
+}
+
+.home-banner-text {
+	opacity: 0;
+	@include transition(all 0.6s 0.4s cubic-bezier(0.645, 0.045, 0.355, 1));
+	@include transform(translate(100%, 0));
+
+	&.animate {
+		opacity: 1;
+		@include transform(translate(0, 0));
+
+	}
+
+	.banner-content {
+		padding-top: 70px;
+
+		@include breakpoint(tablet2) {
+			max-width: 355px;
+		}
+	}
+
+	h2 {
+		font-size: 28px;
+		color: $coWhite;
+		text-transform: uppercase;
+
+		@include breakpoint(tablet) {
+			font-size: 35px;
+			line-height: 38px;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		@include breakpoint(tablet2) {
+			font-size: 21px;
+			line-height: 24px;
+			
+		}
+
+		@include breakpoint(mobile) {
+			font-size: 16px;
+		}
+
+	}
+
+	p {
+		font-size: 12px;
+		color: $coWhite;
+		text-transform: uppercase;
+		margin-bottom: 15px;
+
+		@include breakpoint(tablet) {
+			margin-bottom: 8px;
+			margin-top: 8px;
+			font-size: 14px;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		@include breakpoint(tablet2) {
+			font-size: 11px;
+			
+
+			br {
+				display: none;
+			}
+		}
+	}
+
+	a {
+		color: $coWhite;
+		text-transform: uppercase;
+		text-decoration: none;
+		font-size: 12px;
+		display: inline-block;
+
+		@include breakpoint(tablet) {
+			font-size: 14px;
+		}
+
+		@include breakpoint(tablet2) {
+			font-size: 12px;
+		}
+	}
+
+	h1 {
+		margin-top: -20px;
+
+		@include breakpoint(tablet) {
+			margin-top: -10px;
+		}
+
+		@include breakpoint(tablet2) {
+			margin-top: 0px;
+		}
+		
+
+		img {
+			max-width: 100%;
+			height: auto;	
+
+			@include breakpoint(tablet2) {
+				max-width: 220px;
+			}
+
+
+		}
+	}
+
+}
+
+.coverimage {
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	opacity: 0;
+	@include transition(all 0.4s cubic-bezier(1, 0, 0, 1));
+	-webkit-transform: scale3d(1.2, 1.2, 1.2);
+
+	&.animate {
+		-webkit-transform: scale3d(1, 1, 1);
+		opacity: 1;
+	}
+}

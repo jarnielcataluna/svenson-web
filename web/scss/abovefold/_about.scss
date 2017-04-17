@@ -1,0 +1,124 @@
+.about-banner-text {
+	
+	h1 {
+		font-size: 63px;
+		color: $coWhite;
+		padding: 15px 80px 0px 30px;
+		display: inline-block;
+		background: #7c7c84;
+
+		@include breakpoint(tablet) {
+			font-size: 53px;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		}
+
+		@include breakpoint(tablet2) {
+			font-size: 43px;
+			padding: 15px;
+			background: transparent;
+		}
+
+		@include breakpoint(phablet) {
+			padding: 10px;
+		}
+
+		span {
+			width: 310px;
+			height: 93px;
+			position: relative;
+			display: inline-block;
+			overflow: hidden;
+			text-indent: -9999px;
+			vertical-align: middle;
+			background: url('../images/about/banner-logo.png') no-repeat center center;
+
+			@include breakpoint(tablet2) {
+				max-width: 213px;
+				background-size: contain;
+				height: auto;
+			}
+
+			@include breakpoint(mobile) {
+				max-width: 160px;
+				background-size: contain;
+				height: auto;
+			}
+		}
+	}
+
+	p {
+		background: #7c7c84;
+		padding: 0px 25px 15px 15px;
+		max-width: 422px;
+		color: $coWhite;
+		margin-top: -1px;
+		background: #7c7c84;
+
+		@include breakpoint(tablet) {
+			margin-top: 0;
+			text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+		}
+		
+		@include breakpoint(tablet2) {
+			background: transparent;
+			font-size: 16px;
+			line-height: 20px;
+
+		}
+
+		@include breakpoint(phablet) {
+			padding-right: 15px;
+			padding-top: 10px;
+		}
+
+	}
+
+	a.btn {
+
+		margin-top: 25px;
+	}
+
+	.watch-video {
+		
+		@include breakpoint(tablet) {
+			background: rgba(124, 125, 130, 0.8)
+		}
+
+		span.play-icon {
+			width: 40px;
+			height: 28px;
+			border: 2px solid $coBlack;
+			display: inline-block;
+			vertical-align: middle;
+			margin-left: 8px;
+			margin-top: -3px;
+			position: relative;
+			@include transition(border 0.4s cubic-bezier(0.645, 0.045, 0.355, 1));
+
+			&:before {
+				content:'';
+				position: absolute;
+				top: 50%;
+				left: 50%;
+				margin-left: -4px;
+				margin-top: -7px;
+				width: 0;
+				height: 0;
+				border-top: 7px solid transparent;
+				border-left: 10px solid $coBlack;
+				border-bottom: 7px solid transparent;
+				@include transition(border 0.4s cubic-bezier(0.645, 0.045, 0.355, 1));
+			}
+		}
+
+		&:hover {
+			span.play-icon {
+				border: 2px solid $coYellow;
+
+				&:before {
+					border-left: 10px solid $coYellow;
+				}
+			}
+		}
+	}
+}

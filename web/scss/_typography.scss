@@ -1,0 +1,53 @@
+// includes all tags for paragraphs and titles such as header, p, span
+h1 { 
+	font-size: 73px;
+	font-weight: normal;
+	line-height: 63px;
+	font-family: $fontA;
+
+	@include breakpoint(tablet) {
+		font-size: 53px;
+		line-height: 53px;
+	}
+
+	@include breakpoint(tablet2) {
+		font-size: 43px;
+		line-height: 43px;
+	}
+}
+h2 { 
+	font-size: 42px;
+	font-weight: normal;
+	line-height: 38px;
+	font-family: $fontA;
+}
+h3 { 
+	font-size: 30px;
+	font-weight: normal;
+	font-family: $fontA;
+
+	@include breakpoint(tablet2) {
+		font-size: 24px;
+	}
+}
+h4 { 
+	font-size: 24px;
+	font-weight: normal;
+	font-family: $fontA;
+}
+h5 { 
+	font-size: 20px;
+	font-weight: normal;
+	font-family: $fontA;
+}
+h6 { 
+	font-size: 16px;
+	font-weight: normal;
+	font-family: $fontA;
+}
+.par p { padding: 10px 0px; }
+.par2 p { padding: 5px 0px; }
+
+.text-center {
+	text-align: center;
+}

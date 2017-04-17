@@ -1,0 +1,435 @@
+#news {
+
+	.filter-wrap {
+		position: absolute;
+		left: 0;
+		width: 100%;
+		z-index: 111;
+	}
+
+	.container {
+		position: relative;
+	}
+}
+
+.news-list {
+	margin: 0;
+
+	li {
+		display: block;
+		float: none;
+		clear: both;
+		width: 100%;
+		padding: 0;
+		position: relative;
+		overflow: hidden;
+
+		&:first-child {
+			padding-top: 60px;
+
+			@include breakpoint(tablet) {
+				padding-top: 0;
+			}
+		}
+
+		&:nth-child(even) {
+			background: #808b84;
+
+			&:after {
+				display: none;
+			}
+
+			.new-item {
+				background: #808b84;
+			}
+
+			.tips-img {
+				background: #808b84;
+			}
+		}
+
+		&:after {
+			content:'';
+			display: block;
+			background: url('../images/page_template/lines1.png') no-repeat center center;
+			width: 500px;
+			height: 500px;
+			position: absolute;
+			top: 0;
+			right: 0;
+			@include transform(rotate(90deg));
+			background-size: contain;
+		}
+	}	
+
+}
+
+.new-item {
+	background: #fff;
+	border: none;
+	padding-top: 40px;
+	padding-bottom: 40px;
+	padding-left: 0;
+	padding-right: 0;
+	color: #39443d;
+	position: relative;
+
+	&:after {
+		content:'';
+		display: block;
+		float: none;
+		clear: both;
+	}
+
+	.tips-img {
+		width: 45%;
+		float: right;
+		padding-bottom: 29%;
+		margin-bottom: 0;
+		margin-right: 0;
+		background: $coWhite;
+		position: relative;
+		z-index: 10;
+
+		@include breakpoint(mobile) {
+			float: none;
+			clear: both;
+			width: 100%;
+			padding-bottom: 66%;
+		}
+	}
+
+	.test-excerpt {
+		padding: 20px 0;
+		float: left;
+		width: 55%;
+		padding-right: 30px;
+
+		@include breakpoint(desktop) {
+			padding-right: 15px;
+		}
+
+		@include breakpoint(phablet) {
+			width: 100%;
+			float: none;
+		}
+
+		@include breakpoint(mobile) {
+			float: none;
+			clear: both;
+		}
+
+		h3 {
+			color: #39443d;
+			padding-left: 85px;
+		}
+
+		p {
+			color: #39443d;
+		}
+	}
+
+	
+
+	.read-full {
+		color: #39443d;
+
+		&:hover {
+			color: $coYellow;
+		}
+	}
+}
+
+.date-wrap {
+	color: #39443d; 
+	width: 72px;
+	height: 84px;
+	padding: 8px 5px;
+	display: inline-block;
+	border: 2px solid #39443d;
+	text-align: center;
+	float: left;
+
+	span {
+		font-weight: bold;
+		font-size: 27px;
+
+		span {
+			font-size: 50px;
+			line-height: 35px;
+		}
+
+	}
+}
+
+.categ-list {
+	clear: both;
+	padding: 20px 0 0;
+
+	a {
+		display: inline-block;
+		text-decoration: none;
+		padding: 3px 10px;
+		background: #e0ebe4;
+		color: #8e9992;
+		font-weight: bold;
+		text-transform: uppercase;
+		margin-bottom: 3px;
+
+		&:hover {
+			color: $bgDarkGreen;
+		}
+	}
+}
+
+.wysiwyg-box {
+	padding: 35px 0;
+	border-top: 1px solid #6f6f6f;
+
+	@include breakpoint(tablet2) {
+		padding: 20px 0;
+	}
+
+	.date-wrap {
+		width: 52px;
+		height: 60px;
+		margin-right: 10px;
+		padding: 6px 5px;
+
+		span {
+			font-size: 16px;
+
+			span {
+				font-size: 32px;
+				line-height: 25px;
+			}
+		}
+	}
+
+	.categ-list {
+		padding-top: 0;
+
+		a {
+			background: transparent;
+			border: 1px solid #e0ebe4;
+			color: $bgDarkGreen;
+			padding: 6px 10px;
+			margin-bottom: 7px;
+			font-size: 14px;
+
+			&:hover {
+				background: $bgDarkGreen;
+				color: $coWhite;
+				border: 1px solid $bgDarkGreen;
+			}
+		}
+	}
+}
+
+.wysiwyg-wrap {
+	padding-left: 28px;
+
+	@include breakpoint(tablet2) {
+		padding-left: 15px;
+	}
+}
+
+.ns-share {
+	padding-top: 10px;
+	border-top: 1px solid #68736c;
+	margin-top: 15px;
+
+	p {
+		margin-top: 0;
+		padding-top: 0;
+
+	}
+
+	.dr-social-list {
+		padding-top: 0;
+		padding-left: 0;
+
+		ul {
+			padding-left: 0;
+		}
+	}
+}
+
+.news-single {
+	padding-top: 100px;
+	position: relative;
+
+	@include breakpoint(tablet) {
+		padding-top: 50px;
+	}
+
+	&:after {
+		content:'';
+		display: block;
+		background: url('../images/page_template/lines3.png') no-repeat center center;
+		width: 500px;
+		height: 500px;
+		position: absolute;
+		top: -77px;
+		right: 0;
+		@include transform(rotate(90deg));
+		background-size: contain;
+
+		@include breakpoint(desktop) {
+			width: 400px;
+			height: 400px;
+		}
+
+		@include breakpoint(tablet) {
+			width: 300px;
+			height: 300px;
+		}
+
+		@include breakpoint(tablet2) {
+			width: 200px;
+			height: 200px;
+		}
+	}
+
+	.date-full {
+		display: inline-block;
+		font-weight: 700;
+		font-size: 12px;
+		margin-right: 15px;
+	}
+
+	.categ-list {
+
+		a {
+			font-size: 12px;
+			color: $defaultColor;
+		}
+	}
+}
+
+.related-news-list {
+	
+	li {
+		display: block;
+		clear: both;	
+		padding-bottom: 15px;
+
+		&:after {
+			content:'';
+			display: block;
+			float: none;
+			clear: both;
+		}
+
+		h4 {
+			font-size: 16px;
+			font-family: $defaultFont;
+			font-family: 400;
+
+			@include breakpoint(tablet) {
+				font-size: 22px;
+			}
+
+			@include breakpoint(phablet) {
+				font-size: 16px;
+			}
+		}
+
+		a {
+			text-decoration: none;
+		}
+	}
+}
+
+.wb-title {
+	font-size: 30px;
+	font-family: $defaultFont;
+	font-weight: bold;
+	color: #3f3f41;
+	line-height: 1.2;
+	margin-bottom: 25px;
+
+	@include breakpoint(tablet2) {
+		font-size: 24px;
+		margin-bottom: 15px;
+	}
+}
+
+.news-single-detail {
+
+	h2, h3, h4, h5, h6 {
+		margin: 10px 0;
+	}
+
+	a {
+		font-weight: bold;
+		color: $coYellow;
+
+		&:hover {
+			text-decoration: none;
+		}
+	}
+
+	img.alignright {
+		float:right; margin:0 0 1em 1em;
+		max-width: 100%;
+
+		@include breakpoint(tablet2) {
+			display: block;
+			float: none;
+			clear: both;
+			margin-left: 0;
+		} 
+	}
+
+	img.alignleft {float:left; margin:0 1em 1em 0; max-width: 100%;
+
+		@include breakpoint(tablet2) {
+			display: block;
+			float: none;
+			clear: both;
+			margin-right: 0;
+		} 
+	}
+	img.aligncenter {display: block; margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em; max-width: 100%;}
+	a img.alignright {float:right; margin:0 0 1em 1em; max-width: 100%;}
+	a img.alignleft {float:left; margin:0 1em 1em 0; max-width: 100%;}
+	a img.aligncenter {display: block; margin-left: auto; margin-right: auto; margin-top: 1em; margin-bottom: 1em; max-width: 100%;}
+
+	h1 {
+		font-size: 53px;
+		line-height: 53px;
+
+		@include breakpoint(tablet2) {
+			font-size: 43px;
+			line-height: 43px;
+		}
+
+		@include breakpoint(phablet) {
+			font-size: 33px;
+			line-height: 33px;
+		}
+	}
+
+	ul {
+		padding-left: 25px;
+		list-style-type: disc;
+		padding-top: 15px;
+		padding-bottom: 15px;
+
+		li {
+			padding-bottom: 5px;	
+		}
+	}
+
+	ol {
+		padding-top: 15px;
+		padding-bottom: 15px;
+		padding-left: 25px;
+		list-style-type: decimal;
+		li {
+			padding-bottom: 5px;	
+		}
+	}
+}
+

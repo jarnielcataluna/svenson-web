@@ -1,0 +1,10 @@
+.si-graphic {
+  float: left;
+  width: 50%;
+}
+
+.si-graphic img {
+  max-width: 100%;
+  display: block;
+  height: auto;
+}

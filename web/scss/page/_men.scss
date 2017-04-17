@@ -1,0 +1,309 @@
+.men-temp {
+
+	.free-consult {
+		margin-top: 5px;
+	}
+
+	.banner-men {
+
+		h1 {
+			color: $coYellow;
+		}
+
+		p {
+			max-width: 420px;
+			color: $coWhite;
+		}
+	}
+
+	.hairloss-women-content {
+		color: $coWhite;
+
+		h2 {
+			margin-bottom: 40px;
+
+			@include breakpoint(tablet) {
+				margin-bottom: 20px;
+			}
+		}
+
+
+		h5 {
+			text-transform: uppercase;
+			font-family: $defaultFont;
+			font-size: 30px;
+			color: #fff;
+			margin-left: 150px;
+			margin-top: 25px;
+			margin-bottom: 25px;
+
+			@include breakpoint(tablet) {
+				margin-left: 40px;
+				font-size: 24px;
+			}
+		}
+
+		p {
+			font-size: 20px;
+			line-height: 30px;
+			color: #fff;
+
+			@include breakpoint(tablet) {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	.hairloss-women-img {
+		margin: 20px 0 20px 50px;
+		padding: 10px;
+		border: 1px solid #978989;
+
+		@include breakpoint(tablet) {
+			margin-left: 0;
+		}
+
+		img {
+			width: 100%;
+			max-width: 100%;
+			height: auto;
+			display: block;
+		}
+	}
+
+	.tips {
+		margin-top: 70px;
+		background: #b1bcb5;
+		color: #6c7770;
+		padding: 15px 0;
+
+		@include breakpoint(tablet2) {
+			margin-top: 30px;
+		}
+
+		p {
+			font-size: 20px;
+			line-height: 24px;
+			margin: 10px 0;
+
+			@include breakpoint(tablet) {
+				font-size: 16px;
+				line-height: 20px;
+			}
+		}
+	}
+
+	.hairloss-chart {
+		margin: 40px 0;
+
+		h3 {
+			font-family: $defaultFont;
+			font-weight: 700;
+			color: $coWhite;
+		}
+	}
+
+	.tips-list {
+		.tips-img {
+			padding-bottom: 66%;
+
+			@include breakpoint(tablet2) {
+				padding-bottom: 34%;
+			} 
+
+			@include breakpoint(mobile) {
+				padding-bottom: 66%;
+			}
+		}
+
+		.tip-item {
+			xbackground: #7a6c6c;
+
+			/*@include breakpoint(tablet) {
+				padding: 10px 0;
+			}*/	
+
+			.test-excerpt {
+				
+				h3 {
+					
+					@include breakpoint(tablet) {
+						font-size: 21px;
+					}
+				}
+			}
+		}
+	}
+
+
+	.load-more-wrap {
+		border-top: 1px solid $coWhite;
+
+		.btn {
+			background: $coWhite;
+			color: #554747;
+		}
+	}
+
+	.hairloss-chart-flex {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: nowrap;
+		text-align: center;
+		margin: 25px 0;
+
+		@include breakpoint(tablet2) {
+			flex-wrap: wrap;
+			justify-content: center; 
+		}
+
+		.type-item {
+			background: $coWhite;
+			padding: 20px 25px 25px;
+			border-left: 1px solid #e2ede6;
+			border-right: 1px solid #e2ede6;
+
+			@include breakpoint(tablet) {
+				padding: 20px 10px 25px;
+			}
+
+			@include breakpoint(tablet2) {
+				max-width: 280px;
+				width: 33.33%;
+				margin-bottom: 10px;
+			}
+
+			@include breakpoint(mobile) {
+				width: 50%;
+			}
+		}
+
+		.type-img {
+			width: 54px;
+			height: 59px;
+			position: relative;
+			overflow: hidden;
+			margin: 0 auto 5px;
+		}
+	}
+
+	.solution-wrap {
+
+		h2.sec-title {
+			color: $coYellow;
+		}
+
+		p {
+			color: #897b7b;
+			font-size: 20px;
+			line-height: 24px;
+		}
+	}
+
+
+	.solution-wrapper {
+
+		.container {
+
+			@include breakpoint(tablet2) {
+				padding: 0px;
+			}
+		}
+
+		.expert-list {
+			margin-top: 0;
+		}
+
+		ul {
+			display: flex;
+			flex-direction: row;
+			flex-wrap: nowrap;
+			text-align: center;
+			margin: 25px 0;
+
+			@include breakpoint(tablet) {
+				flex-wrap: wrap;
+				justify-content: center;
+			}
+
+			li {
+				padding: 0px 0px 0px;
+				background: #a8b3ac;
+				border: 1px solid #f6fcf8;
+
+				@include breakpoint(tablet) {
+					float: none;
+					width: auto;
+				}
+
+			}
+		}
+
+		.solution-text {
+			background: #a8b3ac;
+			border: 1px solid transparent;
+
+			.test-excerpt {
+				padding: 0 0 10px;
+			}
+
+			h3 {
+				font-size: 43px;
+			    font-weight: 300;
+			    line-height: 40px;
+			    text-transform: uppercase;
+			    text-align: center;
+			    margin-bottom: 15px;
+
+			    @include breakpoint(tablet) {
+			    	font-size: 34px;
+			    	line-height: 30px;
+			    }
+			}
+
+			p {
+				font-size: 12px;
+				margin-top: 8px;
+				text-transform: uppercase;
+				color: #473939;
+				text-align: center;
+			}
+
+			a {
+				padding: 6px 15px;
+				display: inline-block;
+				text-decoration: none;
+				color: $coWhite;
+				background: #69746d;
+				position: relative;
+				padding-right: 60px;
+				text-transform: uppercase;
+				float: right;
+				margin-right: -15px;
+				margin-top: 30px;
+
+				&:after {
+					content: '';
+				    display: block;
+				    width: 28px;
+				    height: 12px;
+				    background: url(../images/page_template/arrow.png) no-repeat center center;
+				    position: absolute;
+				    top: 50%;
+				    margin-top: -8px;
+				    right: 15px;
+				    -webkit-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+				    -moz-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+				    -ms-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+				    -o-transition: all 0.4s cubic-bezier(0.645, 0.045, 0.355, 1);
+				    transition: all 0.4s cubic-
+				}
+			}
+			
+		}
+	}
+
+}
+
+

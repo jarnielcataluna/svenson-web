@@ -1,0 +1,48 @@
+// include all imported fonts here even google fonts
+@charset 'utf-8';
+/** font face **/
+
+@font-face {
+    font-family: 'minionpro';
+    src: url('../fonts/minionpro.eot');
+    src: url('../fonts/minionpro.eot') format('embedded-opentype'),
+         url('../fonts/minionpro.woff2') format('woff2'),
+         url('../fonts/minionpro.woff') format('woff'),
+         url('../fonts/minionpro.ttf') format('truetype'),
+         url('../fonts/minionpro.svg#minionpro') format('svg');
+}
+
+@font-face{
+    font-family:'proxima_nova';
+    src:url('../fonts/proximanova-bold-webfont.eot');
+    src:url('../fonts/proximanova-bold-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-bold-webfont.woff') format('woff'),
+        url('../fonts/proximanova-bold-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-bold-webfont.svg#proxima_nova_rgbold') format('svg');
+    font-weight:700;
+    font-style:normal
+
+}
+
+@font-face{
+    font-family:'proxima_nova';
+    src:url('../fonts/proximanova-light-webfont.eot');
+    src:url('../fonts/proximanova-light-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-light-webfont.woff') format('woff'),
+        url('../fonts/proximanova-light-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-light-webfont.svg#proxima_novalight') format('svg');
+    font-weight:300;
+    font-style:normal
+}
+
+@font-face{
+    font-family:'proxima_nova';
+    src:url('../fonts/proximanova-regular-webfont.eot');
+    src:url('../fonts/proximanova-regular-webfont.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/proximanova-regular-webfont.woff') format('woff'),
+        url('../fonts/proximanova-regular-webfont.ttf') format('truetype'),
+        url('../fonts/proximanova-regular-webfont.svg#proxima_nova_rgregular') format('svg');
+    font-weight:400;
+    font-style:normal
+}
+/** font face **/
