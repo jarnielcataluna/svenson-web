@@ -253,6 +253,15 @@
 		padding-right: 65px;
 		margin-left: 35px;
 
+		&:hover {
+			border: 1px solid $coYellow;
+
+			&:after {
+				right: 8px;
+			}
+			
+		}
+
 		@include breakpoint(tablet2) {
 			margin-left: 0;
 		}

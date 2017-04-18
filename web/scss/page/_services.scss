@@ -28,6 +28,14 @@
 		margin-top: 60px;
 	}
 
+	&:hover {
+
+		img {
+			filter: none;
+			opacity: 1;
+		}
+	}
+
 	img {
 		max-width: 100%;
 		display: block;

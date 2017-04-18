@@ -57,7 +57,7 @@
 
 			img {
 				opacity: 1;
-
+				filter: none;
 			}
 		}
 
@@ -295,6 +295,14 @@
 				float: right;
 				margin-right: -15px;
 				margin-top: 30px;
+
+				&:hover {
+					color: $coYellow;
+
+					&:after {
+						right: 8px;
+					}
+				}
 
 				&:after {
 					content: '';

@@ -507,7 +507,7 @@
 
 .about-graphic {
 	width: 583px;
-	margin-right: -140px;
+	margin-right: -80px;
 
 	@include breakpoint(largedesktop) {
 		margin-right: 0;
@@ -543,6 +543,13 @@
 }
 
 .about-graphic-big {
+
+	&:hover {
+		img {
+			opacity: 1;
+			filter: none;
+		}
+	}
 
 	img {
 		width: 100%;

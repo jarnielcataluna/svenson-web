@@ -60,6 +60,13 @@
 		padding: 10px;
 		border: 1px solid #978989;
 
+		&:hover {
+
+			img {
+				filter: none;
+			}
+		}
+
 		@include breakpoint(tablet) {
 			margin-left: 0;
 		}
@@ -282,6 +289,14 @@
 				float: right;
 				margin-right: -15px;
 				margin-top: 30px;
+
+				&:hover {
+					color: $coYellow;
+
+					&:after {
+						right: 8px;
+					}
+				}
 
 				&:after {
 					content: '';
