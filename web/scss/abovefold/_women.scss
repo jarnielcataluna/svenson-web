@@ -12,6 +12,10 @@
 
 		a {
 			color: #1c0e0e;
+
+			@include breakpoint(tablet) {
+				color: $coWhite;
+			}
 		}
 	}
 
@@ -22,6 +26,10 @@
 	.main-menu {
 		background: #160808;
 		border-bottom: 1px solid #2b1d1d;
+
+		@include breakpoint(tablet) {
+			background: transparent;
+		}
 	}
 
 	.top-header .call-hotline {
