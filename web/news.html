@@ -32,7 +32,7 @@
 						</li>
 					</ul>
 				</div>
-				<div class="logo"><a href="#"><img src="images/page_template/logo.png" alt=""></a></div>
+				<div class="logo"><a href="index.html"><img src="images/page_template/logo.png" alt=""></a></div>
 				<div class="fr mobile-tools">
 					<a class="mobile-call" href="tel:028924247"><i class="fa fa-phone" aria-hidden="true"></i></a>
 					<div class="header-hamburger">
@@ -58,24 +58,31 @@
 					</div>
 					<nav>
 						<ul>
-							<li><a href="#"><span>HOME</span></a></li>
-							<li><a href="#"><span>HAIR SOLUTIONS</span></a>
+							<li><a href="index.html"><span>HOME</span></a></li>
+							<li class="has-sub"><a href="services.html"><span>HAIR SOLUTIONS</span></a>
 								<ul>
-									<li><a href="#">Prevention</a></li>
-									<li><a href="#">Restoration</a></li>
-									<li><a href="#">Hair Transplant</a></li>
+									<li><a href="services.html">Prevention</a></li>
+									<li><a href="services.html">Restoration</a></li>
+									<li><a href="services.html">Hair Transplant</a></li>
 								</ul>
 							</li>
 							<li><a href="#"><span>SPECIAL OFFERS</span></a></li>
-							<li>
+							<li class="has-sub">
 								<a href="#"><span>ALL ABOUT HAIR</span></a>
 								<ul>
-									<li><a href="#">Men</a></li>
-									<li><a href="#">Women</a></li>
+									<li><a href="men.html">Men</a></li>
+									<li><a href="women.html">Women</a></li>
 								</ul>
 							</li>
-							<li class="active"><a href="#"><span>WHY SVENSON</span></a></li>
-							<li><a href="#"><span>MEDIA CENTER</span></a></li>
+							<li class="active"><a href="about.html"><span>WHY SVENSON</span></a></li>
+							<li class="has-sub">
+								<a href="#"><span>MEDIA CENTER</span></a>
+								<ul>
+									<li><a href="#l">Blog Reviews</a></li>
+									<li><a href="#">News Article</a></li>
+									<li><a href="#">Gallery</a></li>
+								</ul>
+							</li>
 						</ul>
 					</nav>
 					<div class="th-menu th-mobile">
@@ -94,16 +101,36 @@
 		</div>
 	</header>
 	<section id="main-wrapper">
-		<section class="banner-wrap" style="background-image: url('images/banner/banner-news.jpg'); background-size: cover; background-repeat: no-repeat; background-position: bottom right; ">
+		<section class="banner-wrap banner-news">
+			<div class="coverimage">
+				
+				<style type="text/css">
+					.coverimage {
+						background-image: url('images/banner/banner-news.jpg'); background-size: cover; background-repeat: no-repeat;background-position: top right;
+					}
+					
+					@media (max-width: 991px){
+						.coverimage {
+							background-image: url('images/banner/banner-news.jpg'); background-size: cover; background-repeat: no-repeat;background-position: 85% 0;
+						}
+					}
+
+					@media (max-width: 767px){
+						.coverimage {
+							background-image: url('images/banner/banner-mobile-news.jpg'); background-size: cover; background-repeat: no-repeat;background-position: center center;
+						}
+					}
+				</style>
+			</div>
 			<div class="cta-wrap">
 				<div class="container">
 					<div class="gender-options">
 						<ul>
-							<li><a href="#">For Men</a></li>
-							<li><a href="#">For Women</a></li>
+							<li><a href="men.html">For Men</a></li>
+							<li><a href="women.html">For Women</a></li>
 						</ul>
 					</div>	
-					
+					<a href="#" class="free-consult btn btn-white">Get a free consultation</a>
 				</div>
 			</div>
 			<div class="table-wrap">

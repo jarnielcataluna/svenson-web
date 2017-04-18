@@ -4,6 +4,12 @@
 		margin-top: 5px;
 	}
 
+	.table-wrap {
+		@include breakpoint(tablet2) {
+			padding-top: 60px;
+		}
+	}
+
 	.banner-men {
 
 		h1 {

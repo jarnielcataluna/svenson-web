@@ -69,6 +69,11 @@
 			    padding: 10px;
 			    line-height: 40px;
 			}
+
+			@include breakpoint(phablet) {
+				font-size: 33px;
+				line-height: 33px;
+			} 
 		}
 
 		p {

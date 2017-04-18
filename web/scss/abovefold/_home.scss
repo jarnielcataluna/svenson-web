@@ -6,6 +6,18 @@
 	min-height: 520px;
 	overflow: hidden;
 
+	&.banner-news {
+
+		max-height: 320px;
+		min-height: 320px;
+
+		@include breakpoint(tablet) {
+			height: calc(100vh - 109px);
+			max-height: 668px;
+			min-height: 520px;
+		}
+	}
+
 	@include breakpoint(tablet) {
 
 		&:before {
@@ -59,7 +71,9 @@
 			}
 
 			@include breakpoint(phablet) {
-				margin-top: 80px;
+				margin-top: 0;
+				font-size: 33px;
+				line-height: 33px;
 			}
 		}
 	}
@@ -106,6 +120,14 @@
 		@include breakpoint(tablet2) {
 			text-align: left;
 		}
+
+		h1 {
+
+			@include breakpoint(phablet) {
+				font-size: 33px;
+				line-height: 33px;
+			}
+		}
 	}
 }
 
@@ -125,6 +147,7 @@
 
 		@include breakpoint(tablet2) {
 			max-width: 355px;
+			padding-top: 0;
 		}
 	}
 

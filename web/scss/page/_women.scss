@@ -8,7 +8,12 @@
 		background: #7a6c6c
 	}
 
-
+	.table-wrap {
+		@include breakpoint(tablet2) {
+			padding-top: 60px;
+		}
+	}
+	
 	.hairloss-women-content {
 		color: $coWhite;
 

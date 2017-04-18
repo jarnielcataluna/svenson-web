@@ -19,7 +19,7 @@
 		}
 
 		@include breakpoint(phablet) {
-			padding: 10px;
+			padding: 0;
 		}
 
 		span {
@@ -69,6 +69,7 @@
 		@include breakpoint(phablet) {
 			padding-right: 15px;
 			padding-top: 10px;
+			padding-left: 0;
 		}
 
 	}

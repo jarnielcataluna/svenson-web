@@ -239,6 +239,11 @@ header {
 	display: table;
 	z-index: 2;
 
+	@include breakpoint(tablet2) {
+		display: block;
+		padding-top: 110px;
+	}
+
 	.table-cell {
 		display: table-cell;
 		vertical-align: middle;
