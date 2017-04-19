@@ -45,7 +45,6 @@
 		.banner-content {
 			max-width: 573px;
 			float: left;
-			text-align: center;
 
 			@include breakpoint(tablet2) {
 				text-align: left;
@@ -95,5 +94,9 @@
     			margin-top: 0;
 			}
 		}
+	}
+
+	#hair-solutions {
+		background: #faecec;
 	}
 }

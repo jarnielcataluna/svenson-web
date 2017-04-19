@@ -3,7 +3,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>Svenson | Women</title>
+<title>Svenson | Men</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="robots" content="noindex,nofollow" />
@@ -17,6 +17,85 @@
 </head>
 <body>
 <section id="main-container" class="men-temp">
+	<div class="search-form popup-wrap">
+		<a href="#" class="popup-close"><img src="images/page_template/close-icon.png" alt=""></a>
+		<div class="search-pop-content popup-content">
+			<div class="table-wrap">
+				<div class="table-cell">
+					<div class="seach-field-popup">
+						<div class="input-wrap">
+							<input type="text" name="" id="search-field" placeholder="Search the site..">
+							<button><i class="fa fa-search" aria-hidden="true"></i></button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="consult-form popup-wrap">
+		<div class="container">
+			<a href="#" class="popup-close"><img src="images/page_template/close-icon.png" alt=""></a>
+			<div class="consult-content">
+				<h3>We'll respond to you shortly</h3>
+				<form id="consult-form" method="post" action="" novalidate>
+					<div class="input-wrap">
+						<input type="text" id="first-name" name="" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
+						<label for="first-name">Family Name</label>
+			            <div class="required-tooltip right">
+			                <p>This field is required <span>*</span></p>
+			            </div>
+					</div>
+					<div class="input-wrap">
+						<input type="text" id="last-name" name="" value="" maxLength="20" required="required" onchange="this.setAttribute('value', this.value);">
+						<label for="last-name">Last Name</label>
+			            <div class="required-tooltip right">
+			                <p>This field is required <span>*</span></p>
+			            </div>
+					</div>
+					<div class="input-wrap input-half">
+						<select class="custom-select">
+							<option value="0">Gender</option>
+							<option value="1">Male</option>
+							<option value="2">Female</option>
+						</select>
+					</div>
+					<div class="input-wrap input-half no-error">
+						<input type="text" id="birthday" name="dob" value="" required="required" readonly>
+			            <label for="birthday" id="birthday-label">Date of Birth</label>
+			            <div class="required-tooltip left">
+			            </div>
+					</div>
+					<div class="clr"></div>
+					<div class="input-wrap">
+						<input type="email" id="account-email" name="email" value="" required="required" onchange="this.setAttribute('value', this.value);">
+			            <label for="account-email">Email</label>
+			            <div class="required-tooltip right">
+			                <p>Please input a correct email address <span>*</span></p>
+			            </div>
+					</div>
+					<div class="input-wrap">
+						<input type="tel" id="contact-num" name="contact_num" value=""  maxLength="11" required="required" onchange="this.setAttribute('value', this.value);">
+			            <label for="contact-num">Mobile Number</label>
+			            <div class="required-tooltip left">
+			                <p>Please input a correct mobile number<span>*</span></p>
+			            </div>
+					</div>
+					<div class="input-wrap">
+						<textarea colspan="2" rowspan="4" value=""  required="required" onchange="this.setAttribute('value', this.value);"></textarea>
+						<label for="contact-num">Message</label>
+						<div class="required-tooltip right">
+			                <p>This field is required <span>*</span></p>
+			            </div>
+					</div>
+
+					<div class="input-wrap">
+						<button name="" class="btn btn-ghost btn-white book-btn fr">Send</button>
+					</div>
+					<div class="clr"></div>
+				</form>
+			</div>
+		</div>
+	</div>
 	<header>
 		<div class="top-header clearfix">
 			<div class="container">
@@ -66,14 +145,14 @@
 								</ul>
 							</li>
 							<li><a href="#"><span>SPECIAL OFFERS</span></a></li>
-							<li class="has-sub">
+							<li class="active has-sub">
 								<a href="#"><span>ALL ABOUT HAIR</span></a>
 								<ul>
 									<li><a href="men.html">Men</a></li>
 									<li><a href="women.html">Women</a></li>
 								</ul>
 							</li>
-							<li class="active"><a href="about.html"><span>WHY SVENSON</span></a></li>
+							<li ><a href="about.html"><span>WHY SVENSON</span></a></li>
 							<li class="has-sub">
 								<a href="#"><span>MEDIA CENTER</span></a>
 								<ul>
@@ -100,7 +179,7 @@
 					<li><a href="#hairloss-men">Hairloss in Men</a></li>
 					<li><a href="#hair-solutions">Hair solutions for Men</a></li>
 					<li><a href="#hair-tips">Hair care tips</a></li>
-					<li><a href="#consult">Consult Now</a></li>
+					<li><a href="#" class="free-consult-btn">Consult Now</a></li>
 				</ul>
 			</div>
 		</div>
@@ -285,28 +364,31 @@
 					<ul class="testi-list tips-list">
 						<li>
 							<div class="testi-item tip-item">
-								<div class="testi-img tips-img img-grayscale"><img src="images/women/tips1.jpg" alt=""></div>
+								<div class="testi-img tips-img img-grayscale"><a href="#"><img src="images/women/tips1.jpg" alt=""></a></div>
 								<div class="test-excerpt">
-									<h3>5 Hair Care Tips for the Holiday Season</h3>
+									<h3><a href="#">5 Hair Care Tips for the Holiday Season</a></h3>
 									<p>The Christmas season brings joyous parties, reunions, and wonderful feasts. It’s that time of the year when we make sure to look our best...</p>
+									<a href="#" class="read-full">Read Full</a>
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="testi-item tip-item">
-								<div class="testi-img tips-img img-grayscale"><img src="images/women/tips2.jpg" alt=""></div>
+								<div class="testi-img tips-img img-grayscale"><a href="#"><img src="images/women/tips2.jpg" alt=""></a></div>
 								<div class="test-excerpt">
-									<h3>5 Hair Care Tips for the Holiday Season</h3>
+									<h3><a href="#">5 Hair Care Tips for the Holiday Season</a></h3>
 									<p>The Christmas season brings joyous parties, reunions, and wonderful feasts. It’s that time of the year when we make sure to look our best...</p>
+									<a href="#" class="read-full">Read Full</a>
 								</div>
 							</div>
 						</li>
 						<li>
 							<div class="testi-item tip-item">
-								<div class="testi-img tips-img img-grayscale"><img src="images/women/tips3.jpg" alt=""></div>
+								<div class="testi-img tips-img img-grayscale"><a href="#"><img src="images/women/tips3.jpg" alt=""></a></div>
 								<div class="test-excerpt">
-									<h3>5 Hair Care Tips for the Holiday Season</h3>
+									<h3><a href="#">5 Hair Care Tips for the Holiday Season</a></h3>
 									<p>The Christmas season brings joyous parties, reunions, and wonderful feasts. It’s that time of the year when we make sure to look our best...</p>
+									<a href="#" class="read-full">Read Full</a>
 								</div>
 							</div>
 						</li>
@@ -326,6 +408,13 @@
 					<h2 class="sec-title">LET’S TALK <br>ABOUT HAIR</h2>
 					<a href="#" class="btn btn-ghost btn-white book-btn">Book an appointment now</a>
 				</div>
+				<!-- <div class="other-services-wrap">
+					<div class="other-services">
+						<h5>Other services you might be interested with</h5>
+						<a href="#" class="btn btn-ghost btn-white book-btn">Hair Restoration</a>
+						<a href="#" class="btn btn-ghost btn-white book-btn">Hair Lost Prevention</a>
+					</div>
+				</div> -->
 			</div>
 		</section>
 
@@ -397,6 +486,7 @@
 <script src="js/lib/jquery-ui.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/jquery.appear.js"></script>
+<script src="js/consult.js"></script>
 <script src="js/custom.js"></script>
 </body>
 </html>

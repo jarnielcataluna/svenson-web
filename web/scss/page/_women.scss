@@ -13,7 +13,7 @@
 			padding-top: 60px;
 		}
 	}
-	
+
 	.hairloss-women-content {
 		color: $coWhite;
 
@@ -31,7 +31,7 @@
 			font-family: $defaultFont;
 			font-size: 30px;
 			color: #fff;
-			margin-left: 150px;
+			margin-left: 25%;
 			margin-top: 25px;
 			margin-bottom: 25px;
 
@@ -219,6 +219,31 @@
 		}
 	}
 
+	.other-services-wrap {
+		background: #faecec;
+
+		.other-services {
+			border: 1px solid #bfb1b1;
+
+			h5 {
+				color: #847676;
+			}
+
+			a {
+				border: 1px solid #847676;
+				color: #877979; 
+
+				&:hover {
+					border: 1px solid $coYellow;
+					color: $coYellow;
+				}
+
+				&:after {
+					background: url(../images/page_template/arrow-brown.png) no-repeat center center;
+				}
+			}
+		}
+	}
 
 	.solution-wrapper {
 
@@ -246,9 +271,10 @@
 			}
 
 			li {
-				padding: 0px 0px 0px;
+				padding: 0px 0px 50px;
 				background: #b9abab;
 				border: 1px solid #f6fcf8;
+				position: relative;
 
 				@include breakpoint(tablet) {
 					float: none;
@@ -261,6 +287,8 @@
 		.solution-text {
 			background: #b9abab;
 			border: 1px solid transparent;
+			padding: 50px 15px 20px;
+			position: static;
 
 			.test-excerpt {
 				padding: 0 0 10px;
@@ -272,7 +300,8 @@
 			    line-height: 40px;
 			    text-transform: uppercase;
 			    text-align: center;
-			    margin-bottom: 15px;
+			    margin-bottom: 10px;
+			    color: #faecec;
 
 			    @include breakpoint(tablet) {
 			    	font-size: 34px;
@@ -282,10 +311,15 @@
 
 			p {
 				font-size: 12px;
-				margin-top: 8px;
+				margin-top: 20px;
 				text-transform: uppercase;
-				color: #473939;
+				color: #544646;
 				text-align: center;
+				font-weight: 300;
+
+				&:first-child {
+					margin-top: 10px;
+				}
 			}
 
 			a {
@@ -300,6 +334,12 @@
 				float: right;
 				margin-right: -15px;
 				margin-top: 30px;
+
+				position: absolute;
+			    min-width: 180px;
+			    right: 0px;
+			    margin-right: 0;
+			    bottom: 18px;
 
 				&:hover {
 					color: $coYellow;

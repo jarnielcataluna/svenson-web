@@ -49,6 +49,7 @@
 	.sec-title {
 		margin-left: -80px;
 		margin-bottom: 0;
+		font-size: 60px;
 
 		@include breakpoint(largedesktop) {
 			margin-left: -30px;
@@ -56,6 +57,13 @@
 
 		@include breakpoint(tablet) {
 			margin-left: 0;
+			font-size: 50px;
+			line-height: 50px;
+		}
+
+		@include breakpoint(tablet2) {
+			font-size: 32px;
+			line-height: 32px;
 		}
 	}
 
@@ -75,6 +83,8 @@
 	position: relative;
 	padding-top: 60px;
 	z-index: 10;
+	max-width: 460px;
+	margin: 0 auto;
 
 	@include breakpoint(tablet2) {
 		padding-top: 30px;
@@ -191,7 +201,8 @@
 
 .g-before-after {
 	width: 100%;
-	height: 260px;
+	height: 0;
+	padding-bottom: 56%;
 	border: 1px solid #a1aca5;
 	background: $bgDarkGreen;
 
@@ -280,3 +291,5 @@
 		}
 	}
 }
+
+

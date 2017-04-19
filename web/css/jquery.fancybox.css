@@ -362,7 +362,7 @@
   pointer-events: none; }
 
 .fancybox-infobar__body, .fancybox-button {
-  background: rgba(30, 30, 30, 0.6); }
+  background: rgba(0, 0, 0, 0.9); }
 
 .fancybox-button:hover {
   background: rgba(0, 0, 0, 0.8); }

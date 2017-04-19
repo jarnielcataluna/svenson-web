@@ -167,6 +167,7 @@
 
 		a {
 			text-decoration: none;
+			color: $coWhite;
 		}
 
 		@include breakpoint(phablet) {
@@ -176,6 +177,13 @@
 
 	p {
 		color: $coWhite;
+	}
+
+	.read-full {
+
+		&:after {
+			    background: url(../images/page_template/arrow.png) no-repeat center center;
+		}
 	}
 }
 

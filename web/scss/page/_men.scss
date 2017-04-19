@@ -241,9 +241,10 @@
 			}
 
 			li {
-				padding: 0px 0px 0px;
+				padding: 0px 0px 50px;
 				background: #a8b3ac;
 				border: 1px solid #f6fcf8;
+				position: relative;
 
 				@include breakpoint(tablet) {
 					float: none;
@@ -256,6 +257,8 @@
 		.solution-text {
 			background: #a8b3ac;
 			border: 1px solid transparent;
+			padding: 50px 15px 20px;
+			position: static;
 
 			.test-excerpt {
 				padding: 0 0 10px;
@@ -277,10 +280,11 @@
 
 			p {
 				font-size: 12px;
-				margin-top: 8px;
+				margin-top: 20px;
 				text-transform: uppercase;
 				color: #473939;
 				text-align: center;
+				font-weight: 300;
 			}
 
 			a {
@@ -295,6 +299,13 @@
 				float: right;
 				margin-right: -15px;
 				margin-top: 30px;
+
+
+				position: absolute;
+			    min-width: 180px;
+			    right: 0px;
+			    margin-right: 0;
+			    bottom: 18px;
 
 				&:hover {
 					color: $coYellow;
@@ -323,6 +334,10 @@
 			}
 			
 		}
+	}
+
+	.tiles4 {
+		margin-right: 0;
 	}
 
 }

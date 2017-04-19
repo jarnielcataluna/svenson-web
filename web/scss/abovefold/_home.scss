@@ -16,6 +16,10 @@
 			max-height: 668px;
 			min-height: 520px;
 		}
+
+		h1 {
+			color: $coYellow;
+		}
 	}
 
 	@include breakpoint(tablet) {
@@ -88,7 +92,9 @@
 			height: calc(100vh - 55px);
 		}
 
-		
+		@include breakpoint(tablet2) {
+			min-height: 420px;
+		}
 
 		.banner-content {
 			text-align: right;
