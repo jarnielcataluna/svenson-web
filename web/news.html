@@ -83,7 +83,7 @@
 			            </div>
 					</div>
 					<div class="input-wrap">
-						<textarea colspan="2" rowspan="4" value=""  required="required" onchange="this.setAttribute('value', this.value);"></textarea>
+						<textarea id="consult-message" colspan="2" rowspan="4" value=""  required="required" onchange="this.setAttribute('value', this.value);"></textarea>
 						<label for="contact-num">Message</label>
 						<div class="required-tooltip right">
 			                <p>This field is required <span>*</span></p>
@@ -226,11 +226,29 @@
 
 		<section id="news" class="">
 			<div class="container">
-				<div class="filter-wrap">
+				<div class="filter-wrap filter-news">
 					<ul>
-						<li><a href="#testimonials">TESTIMONIALS</a></li>
-						<li><a href="#our-expert">OUR TEAM OF EXPERTS</a></li>
-						<li><a href="#about">ABOUT SVENSON</a></li>
+						<li>
+							<div class="choose-categ">
+								<select class="custom-select">
+									<option value="0">Category 1</option>
+									<option value="0">Category 2</option>
+									<option value="0">Category 3</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<div class="sort-by">
+								<select class="custom-select">
+									<option value="0">Date</option>
+									<option value="0">Sample</option>
+									<option value="0">Sample</option>
+								</select>
+							</div>
+						</li>
+						<li>
+							<a href="#" >Subscribe to Newsletter</a>
+						</li>
 					</ul>
 				</div>
 			</div>	
@@ -368,6 +386,7 @@
 <script src="js/lib/jquery-ui.min.js"></script>
 <script src="js/plugins.js"></script>
 <script src="js/jquery.fancybox.js"></script>
+<script src="js/jquery.appear.js"></script>
 <script src="js/consult.js"></script>
 <script src="js/custom.js"></script>
 </body>

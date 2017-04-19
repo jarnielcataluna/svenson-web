@@ -65,6 +65,7 @@ footer {
 	ul {
 
 		li {
+
 			a {
 				display: inline-block;
 				color: $coWhite;
@@ -73,7 +74,7 @@ footer {
 				text-decoration: none;
 
 				&:hover {
-					color: #19241e;
+					color: $coYellow;
 				}
 			}
 		}

@@ -202,10 +202,19 @@
 
 	ul {
 
+		&:after {
+			content:'';
+			display: block;
+			float: none;
+			clear: both;
+		}
+
+
 		> li {
 			display: inline-block;
 			margin-right: 10px;
 			margin-bottom: 4px;
+			vertical-align: top;
 
 			&.active {
 				> a {
@@ -226,6 +235,25 @@
 				border: 1px solid transparent;
 				text-transform: uppercase;
 				@include transition(all 0.4s ease);
+			}
+		}
+	}
+}
+
+header .subnav-wrap {
+
+	ul {
+		&:after {
+			content:'';
+			display: block;
+			float: none;
+			clear: both;
+		}
+
+		> li {
+
+			&:last-child {
+				float: right;
 			}
 		}
 	}
@@ -906,10 +934,10 @@ input::-webkit-inner-spin-button {
 .custom-select-wrapper { 
 	display: block; 
 	position: relative; 
-	height: 39px; 
-	background: $coWhite;  
+	height: 44px; 
+	background: transparent;  
 	box-sizing: border-box; 
-	border: 1px solid transparent;
+	border: 1px solid $bgDarkGreen;
 
 	.error & {
 		border-bottom: 1px solid #480505;
@@ -941,6 +969,8 @@ input::-webkit-inner-spin-button {
 	padding: 11px 8px 0px 8px; 
 	white-space: nowrap; 
 	text-overflow: ellipsis;
+	font-weight: 700;
+	color: $bgDarkGreen;
 }
 
 .custom-select-wrapper select { 
@@ -958,4 +988,8 @@ input::-webkit-inner-spin-button {
 
 .seach-field-popup {
 
+}
+
+.choose-categ {
+	width: 210px;
 }

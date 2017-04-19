@@ -122,6 +122,10 @@
 		h3 {
 			color: #39443d;
 			padding-left: 85px;
+
+			a {
+				color: #39443d;
+			}
 		}
 
 		p {
@@ -435,3 +439,22 @@
 	}
 }
 
+.filter-wrap.filter-news {
+
+	ul {
+
+		&:after {
+			content:'';
+			display: block;
+			float: none;
+			clear: both;
+		}
+
+		> li {
+
+			&:last-child {
+				float: right;
+			}
+		}
+	}
+}

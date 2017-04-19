@@ -95,7 +95,14 @@ $(document).ready(function() {
             isvalidate = false;
         }
 
-        if( IsEmail($('#account-email').val()) && !$('#last-name').val() == '' && $('#contact-num').val() != '' && $('#contact-num').val().length >= 11 && !$('#first-name').val() == '' ) {
+        if( $('#consult-message').val() != ''){
+            $('#consult-message').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( IsEmail($('#account-email').val()) && !$('#last-name').val() == '' && $('#contact-num').val() != '' && $('#contact-num').val().length >= 11 && !$('#first-name').val() == '' && $('#consult-message').val() != '' ) {
 
             return false;
         } else {
