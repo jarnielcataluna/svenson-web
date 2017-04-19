@@ -32,7 +32,6 @@ $(document).ready(function() {
         if($(this).val() !="0") {
             
             $('.gender').find('.custom-select-display').css({'color' : '#000'});
-
             if($("input[value='']:not(:checkbox,:button):visible:empty:first").length > 0) {
                 $("input[value='']:not(:checkbox,:button):visible:empty:first").focus();
             } else {
@@ -47,7 +46,6 @@ $(document).ready(function() {
                     }
                 });
             }
-
         } else {
             $('.gender').find('.custom-select-display').css({'color' : '#8d8d8d'});
         }
@@ -60,7 +58,7 @@ $(document).ready(function() {
         isvalidate = false;
 
 
-        if( IsEmail($('#account-email').val() )) {
+        if( IsEmail($('#account-email').val()) ) {
             $('#account-email').closest('.input-wrap').removeClass('error');
             isvalidate = true;
         } else {
@@ -81,13 +79,6 @@ $(document).ready(function() {
             isvalidate = false;
         }
 
-        if( !$('#account-email').val() == '') {
-            $('#account-email').closest('.input-wrap').removeClass('error');
-            isvalidate = true;
-        } else {
-            isvalidate = false;
-        }
-
         if( $('#contact-num').val() != '' && $('#contact-num').val().length >= 11 ){
             $('#contact-num').closest('.input-wrap').removeClass('error');
             isvalidate = true;
@@ -103,6 +94,51 @@ $(document).ready(function() {
         }
 
         if( IsEmail($('#account-email').val()) && !$('#last-name').val() == '' && $('#contact-num').val() != '' && $('#contact-num').val().length >= 11 && !$('#first-name').val() == '' && $('#consult-message').val() != '' ) {
+
+            return false;
+        } else {
+            e.preventDefault();
+            console.log(IsEmail($('#account-email').val()));
+            
+        }
+    });
+
+    $('#contact-form').submit(function(e){
+        e.preventDefault();
+
+        $('.input-wrap:not(.no-error)').addClass('error');
+        isvalidate = false;
+
+
+        if( IsEmail($('#c-account-email').val() )) {
+            $('#c-account-email').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( !$('#full-name').val() == '') {
+            $('#full-name').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( $('#c-contact-num').val() != '' && $('#contact-num').val().length >= 11 ){
+            $('#contact-num').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( $('#c-contact-message').val() != ''){
+            $('#c-contact-message').closest('.input-wrap').removeClass('error');
+            isvalidate = true;
+        } else {
+            isvalidate = false;
+        }
+
+        if( IsEmail($('#c-account-email').val()) && $('#c-contact-num').val() != '' && $('#c-contact-num').val().length >= 11 && !$('#c-full-name').val() == '' && $('#c-contact-message').val() != '' ) {
 
             return false;
         } else {

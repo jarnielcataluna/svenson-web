@@ -1,7 +1,7 @@
-#overview  {
+#overview, #section1  {
 
     .tiles6 {
-    	margin-top: -103px;
+    	margin-top: -134px;
 
     	@include breakpoint(tablet) {
 			display: none;
@@ -46,6 +46,7 @@
 }
 
 .services-content {
+
 	.sec-title {
 		margin-left: -80px;
 		margin-bottom: 0;

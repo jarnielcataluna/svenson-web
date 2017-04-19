@@ -114,28 +114,30 @@ footer {
 	}
 
 	.input-wrap {
+		padding-left: 0;
+
 		input[type="email"] {
 			width: 100%;
 			border: none;
 			background: $coWhite;
+			color: $bgDarkGreen;
 			padding: 9px 10px;
-			border-radius: 5px;
 
 			&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
-			  color: #ccc;
-			  font-size: 12px;
+			  color: lighten($bgDarkGreen, 3%);
+			  font-size: 11px;
 			}
 			&::-moz-placeholder { /* Firefox 19+ */
-			  color: #ccc;
-			  font-size: 12px;
+			  color: lighten($bgDarkGreen, 3%);
+			  font-size: 11px;
 			}
 			&:-ms-input-placeholder { /* IE 10+ */
-			  color: #ccc;
-			  font-size: 12px;
+			  color: lighten($bgDarkGreen, 3%);
+			  font-size: 11px;
 			}
 			&:-moz-placeholder { /* Firefox 18- */
-			  color: #ccc;
-			  font-size: 12px;
+			  color: lighten($bgDarkGreen, 3%);
+			  font-size: 11px;
 			}
 		}
 
@@ -143,7 +145,6 @@ footer {
 			position: absolute;
 			display: block;
 			border: none;
-			border-radius: 4px;
 			background: $coYellow;
 			top: 0;
 			right: 0;
@@ -175,8 +176,11 @@ footer {
 			color: $coWhite;
 			text-align: center;
 			line-height: 30px;
-			border-radius: 3px;
 			font-size: 18px;
+
+			&:hover {
+				color: $bgDarkGreen !important;
+			}	
 			
 		}
 	}

@@ -1,7 +1,7 @@
-#testimonials {
+#testimonials, #section1 {
 
 	.tiles1 {
-		margin-top: -103px;
+		margin-top: -134px;
 
 		@include breakpoint(tablet) {
 			display: none;
@@ -43,6 +43,15 @@
 		float: left;
 		width: 33.33%;
 		padding: 0px 8px 20px 8px;
+		@include transition(all 0.4s cubic-bezier(0.215, 0.61, 0.355, 1));
+		position: relative;
+		top: 0;
+
+		&.animated {
+			opacity: 0;
+			visibility: hidden;
+			top: 60px;
+		}
 
 		&:nth-child(3n + 1) {
 			clear: left;
@@ -389,6 +398,13 @@
 	border-top: 1px solid #b0bbb5;
 	padding-top: 20px;
 	margin-top: 20px;
+
+	.btn {
+
+		&:hover {
+			color: $coYellow;
+		}
+	}
 }
 
 .gallery-col {

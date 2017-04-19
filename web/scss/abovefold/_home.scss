@@ -6,6 +6,21 @@
 	min-height: 520px;
 	overflow: hidden;
 
+	&.banner-404 {
+		background: transparent;
+		min-height: 38px;
+		max-height: 38px;
+		display: none;
+
+		@include breakpoint(tablet) {
+			display: block;
+		}
+
+		&:before {
+			background: none;
+		}
+	}
+
 	&.banner-news {
 
 		max-height: 320px;

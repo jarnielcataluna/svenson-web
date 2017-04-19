@@ -156,11 +156,11 @@
 
 	span {
 		font-weight: bold;
-		font-size: 27px;
+		font-size: 22px;
 
 		span {
 			font-size: 50px;
-			line-height: 35px;
+			line-height: 40px;
 		}
 
 	}
@@ -440,6 +440,7 @@
 }
 
 .filter-wrap.filter-news {
+	background-color: #3a453e;
 
 	ul {
 
@@ -452,9 +453,59 @@
 
 		> li {
 
+			a {
+				background: transparent;
+				border: 1px solid $coWhite;
+			}
+
 			&:last-child {
 				float: right;
 			}
 		}
 	}
 }
+
+.pagination-wrap {
+	margin-bottom: 30px;
+	margin-top: 30px;
+
+	ul {
+		text-align: center;
+
+		li {
+			display: inline-block;
+			text-align: center;
+			margin: 0px 1px;
+
+			a {
+				min-width: 30px;
+				height: 30px;
+				padding-right: 5px;
+				padding-left: 5px;
+				background: $coYellow;
+				display: inline-block;
+				text-align: center;
+				line-height: 30px;
+				font-weight: 700;
+				text-decoration: none;
+				color: $bgDarkGreen;
+
+				background: #e0ebe4;
+    			color: #8e9992;
+
+    			&:hover {
+    				background: $bgDarkGreen;
+    				color: $coWhite;
+    			}
+
+				.fa {
+					top: 2px;
+					position: relative;
+				}
+
+			}
+		}
+	}
+}
+
+
